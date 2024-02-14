@@ -10,5 +10,5 @@ public class ManiManitasApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ManiManitasApplication.class, args);
 	}
-
+	
 }

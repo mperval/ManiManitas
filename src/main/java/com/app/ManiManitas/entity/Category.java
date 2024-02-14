@@ -1,35 +1,22 @@
 package com.app.ManiManitas.entity;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
 
 @Entity
-public class Category {
-	@Id
-	@GeneratedValue
-	private int id;
+public class Category extends DomainEntity{
+	private static final long serialVersionUID = 1L;
 	
 	private String name;
 
 	
 	
 	public Category() {
-		
+		super();
 	}
 
 	public Category(int id, String name) {
 		super();
-		this.id = id;
 		this.name = name;
-	}
-	
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getName() {
@@ -42,7 +29,7 @@ public class Category {
 
 	@Override
 	public String toString() {
-		return "Category [id=" + id + ", name=" + name + "]";
+		return "Category [ name=" + name + "]";
 	}	
 	
 	
