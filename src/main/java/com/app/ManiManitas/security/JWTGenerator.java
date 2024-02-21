@@ -16,7 +16,7 @@ public class JWTGenerator {
 	private static final long JWT_EXPIRTATION_TIME = 3000000;
 	private static final String JWT_FIRMA = "Mr.Spring";
 	
-	public String generatorToken(Authentication authentication) {
+	public static String generatorToken(Authentication authentication) {
 		
 		String username =  authentication.getName();
 		Date tiempoActual = new Date();
